@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration form</title>
+  </head>
+  <body>
+    <div class="main-block">
+      <div class="left-part">
+        <i class="fas fa-graduation-cap"></i>
+        <h1>Submit Details for Registration</h1>
+      </div>
+      <form action="" method="POST">
+        {% csrf_token %}
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i> 
+        </div>
+        <div class="info">
+          <input class="fname" type="text" name="name" placeholder="Full name">
+          <input type="text" name="email" placeholder="Email">
+          <input type="text" name="phone" placeholder="Phone number">
+          <input type="text" name="address" placeholder="Address">
+        </div>
+        <button type="submit" href="/">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
